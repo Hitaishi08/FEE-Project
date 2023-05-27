@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+*{
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: rgb(28, 11, 43);
+}
+button{
+    color: white;
+    border:0;
+    border-radius: 20px;
+    height:30px;
+    width:100px;
+}
+button:hover{
+    background-color: rgb(73, 230, 73);
+}
+.ul{
+color: rgb(255, 255, 255);
+float: right;
+padding-left: 0px;
+}
+.li1{
+    padding-top:10px;
+    color: white;
+    padding-right: 30px;
+}
+.li1:hover{
+    color: rgb(73, 230, 73);
+}
+li{
+    float: right;
+    padding-right: 20px;
+    padding-top:5px;
+}
+img{
+    height: 50px;
+    padding-left: 25px;
+}
+#p1{
+    color:white;
+    display:flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+h1{
+    padding-top: 5%;
+color: white;
+font-size: 700%;
+padding-left: 6%;
+font-family:'Josefin Sans', sans-serif;
+margin-bottom: 0px;
+text-shadow:0px 0px 4px gainsboro;
+
+}
+.heading2{
+    color: white;
+   font-size: 300%;
+   padding-left: 6%;
+   font-family:'Josefin Sans', sans-serif;
+   margin-bottom: 0px;
+   text-shadow:0px 0px 4px gainsboro;
+}
+.disc{
+    color:rgba(255, 255, 255, 0.749);
+    font-size: 20px;
+    font-family:'Rajdhani', sans-serif;
+    padding-left:100px;
+    padding-top: 0px;
+}
+.imgslider{
+    width: 300px;
+    height: 350px;
+    background-image:url(webimages/information-management.png);
+    background-size: 100% 100%;
+    animation: changeimage 15s linear infinite;
+    float: right;
+    padding-right: 200px;
+}
+@keyframes changeimage {
+    0%{
+        background-image: url(webimages/information-management.png);
+    }
+    25%{
+        background-image: url(webimages/online-survey.png);
+    }
+    50%{
+        background-image: url(webimages/online-survey\ \(1\).png);
+    }
+    75%{
+        background-image: url(webimages/online-survey\ \(2\).png);
+    }
+    
+}
+.div3{
+    padding-left: 350px;
+}
+#fbutton{
+    border: 0px;
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    color: black;
+    font-size: 20px;
+    
+}
+#fbutton:hover{
+    background-color: rgb(73, 230, 73);
+}

@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>
+       signup
+    </title>
+    <link href = "link5.css" rel="stylesheet" type = "text/css">
+    <script type ="text/javascript">
+        function validate(){
+            var name = document.getElementById('fname').value.trim();
+            var pass = document.getElementById('password').value.trim();
+            if(name == ""){
+                alert("invalid name");
+                return false;
+            }
+            if(pass == ""){
+                alert("invalid password");
+                return false;
+            }
+            else if(pass.lenght<6){
+                alert("create a strong password");
+                return false;
+            }
+            if(name == "" && pass.lenght<5){
+                alert("wrong information");
+                return false;
+            }
+            else{
+                alert("signup successfully");
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div class="background"></div>
+    <div class ="box">
+        <span class="borderLine"></span>
+        <form onsubmit="return validate()" name="myform" action = "webpage1.html" method="post">
+            <h2>sign Up</h2>
+            <div class="inputBox">
+            <input type ="text"  id="fname">
+            <label class="name"><img src="user.png" class="user">Name</label>
+            <i></i>
+            </div>
+            <div class="inputBox">
+            <input type ="email" required="required">
+            <label><img src="envelope.png" class="mail">Email</label>
+            <i></i>
+            </div>
+            <div class="inputBox">
+             <input type ="password"  id ="password">
+             <label><img src="password.png" class="password"> password</label>
+             <i></i>
+            </div> 
+            <diV class="links">
+                <p class="agree"><input type ="checkbox" required="required"> I read and agree to </input><a href="#">Terms & Conditions</a></p>
+            </diV>
+            <input type = "submit" value = "CREATE ACCOUNT">
+            <div class = links>
+                <p class="already">Already have an account?<a href="login.html"> Sign in</a></p>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

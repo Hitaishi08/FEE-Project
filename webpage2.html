@@ -1,0 +1,93 @@
+<html>
+    <head>
+      <title>
+        survey form
+      </title>
+      <link href="link2.css" rel="stylesheet" type="text/css">
+      <script type="text/javascript">
+        function validate(){
+        var name = name.document.myform.fname.value;
+        var feed = feed.document.myform.feedback.value;
+        var age = age.document.myform.age.value;
+        if(name==null || name ==""){
+          alert("invalid name");
+          document.getElementById("nameerror").style.visibility="visible"
+          return false;
+        }
+        else if(age>99){
+            alert("invalid age");
+            return false;
+        }
+        else if(feed == null || feed == ""){
+          alert("invalid feedback");
+            return false;
+        }
+        else{
+          true;
+        }
+        }
+       </script>
+    </head>
+    <body>
+     <h1 class="title">Online Survey Form</h1>
+     <p class = "discription"><em>Thank you for taking the time to help us improve the platform</em></p>
+     <div class="form-center">
+     <form onsubmit="return validate()" class="form" action="webpage3.html" method="post" name="myform">
+    <label>Name:</label>
+    <br>
+    <input type="text" size="70px" id="fname" required><span style="color: red; visibility:hidden" id="nameerror"  > *invalid</span>
+    <br><br>
+    <label>Last Name:</label>
+    <br>
+    <input type="text" size="70px" name="lastname"><span class="error"></span>
+    <br><br>
+    <label>Age: </label>
+    <br>
+    <input type="number" required size="70px" name="age"><span class="error"></span>
+    <br><br>
+    <label>Gender:</label>
+    <br>
+    <select name="gender" required><span class="error"></span>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+        <option value="O">Other</option>
+    </select>
+    <br><br>
+    <label>Email:</label>
+    <br>
+    <input type="email" required size="70px" name="email">
+    </input><span class="error"></span>
+    <br><br>
+    <label>Contact:</label required size="70px">
+    <br>
+    <input type="tel" value="+91" size="70px" maxlength="13" name="contact"><span class="error"></span>
+    <br><br>
+    <label>Are you satisfied with our services?</label>
+    <br><span class="error"></span>
+    <input type="radio" name="select">very satisfied</input><br>
+    <input type="radio" name="select">satisfied</input><br>
+    <input type="radio" name="select">unsatisfied</input><br>
+    <input type="radio" name="select">very unsatisfied</radio>
+    <br><br>
+    <label>What made us stand out from other companies?</label>
+    <br>
+    <textarea rows="4" columns="40" id = "feedback"></textarea>
+    <br><br>
+    <label>Where did you hear about our company?</label>
+    <br><br>
+    <input type ="radio" name="choose">Website</input>
+    <input type ="radio" name="choose">Social Media</input>
+    <input type ="radio" name="choose">Friends</input>
+    <input type ="radio" name="choose">Others</input>
+    <br><br>
+    <label>Any suggestions/comments to better improve our service?</label>
+    <br>
+    <textarea rows="4" columns="40" id ="feedback"></textarea>
+    <br><br>
+    <div class="div">
+    <input class="button" type="submit" value="submit">
+     </div>
+     </form>
+     </div>
+    </body>
+</html>

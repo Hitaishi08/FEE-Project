@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link href = "link4.css" rel ="stylesheet" type ="text/css">
+    </head>
+    <body>
+        <div class="background"></div>
+    <div class ="box">
+        <span class="borderLine"></span>
+        <form action="webpage2.html" method ="post" onsubmit="return log()">
+            <h2>sign in</h2>
+            <div class="inputBox">
+            <input type ="text" required="required" id="name">
+            <label>Username</label>
+            <i></i>
+            </div>
+            <div class="inputBox">
+             <input type ="password" required ="required" id ="password">
+             <label> password</label>
+             <i></i>
+            </div> 
+            <diV class="links">
+                <a href="forgotpassword.html">Forgot password </a>
+                 <a href="signup.html">signup</a>
+            </diV>
+            <input type = "submit" value = "Login">
+        </form>
+    </div>
+    <script type ="text/javascript">
+        function log(){
+        var name = document.getElementById('name').value.trim();
+        var pass = document.getElementById('password').value.trim();
+        if(name != 'hitaishi' && pass != '12345')
+        {   
+            alert("Invalid Login");
+            return false;
+        }
+        else{
+            alert("Successfully Login")
+            window.location.assign("webpage2.html")
+            return true;
+        }
+        }
+    </script>
+    </body>
+</html>
